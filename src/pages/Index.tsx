@@ -186,10 +186,45 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-white py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="mb-2">© 2024 Brew Haven. All rights reserved.</p>
-          <p className="text-white/70">Crafting the perfect cup, one espresso shot at a time ☕</p>
+      <footer className="bg-foreground text-white py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {/* About */}
+            <div>
+              <h4 className="font-bold text-lg mb-3">Brew Haven</h4>
+              <p className="text-white/70 text-sm">Crafting the perfect cup, one espresso shot at a time ☕</p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-bold text-lg mb-3">Quick Links</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#menu" className="text-white/70 hover:text-white transition">Menu</a></li>
+                <li><a href="#hours" className="text-white/70 hover:text-white transition">Hours</a></li>
+                <li><a href="#contact" className="text-white/70 hover:text-white transition">Contact</a></li>
+              </ul>
+            </div>
+
+            {/* Social Media */}
+            <div>
+              <h4 className="font-bold text-lg mb-3">Follow Us</h4>
+              <div className="flex justify-start gap-4">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m5.894 8.221c.004.126.006.252.006.378 0 3.863-2.938 8.33-8.33 8.33-1.654 0-3.19-.485-4.488-1.313.23.027.464.042.701.042 1.372 0 2.638-.467 3.643-1.25-1.281-.024-2.365-.871-2.737-2.037.18.028.364.044.552.044.267 0 .526-.036.775-.103-1.338-.268-2.344-1.45-2.344-2.866v-.036c.395.22.847.352 1.33.367-.784-.524-1.302-1.416-1.302-2.427 0-.535.143-1.036.394-1.466 1.442 1.771 3.599 2.938 6.02 3.063-.025-.11-.04-.225-.04-.343 0-1.61 1.306-2.916 2.916-2.916.839 0 1.597.354 2.129.923.664-.13 1.29-.371 1.852-.703-.217.68-.68 1.25-1.281 1.612.59-.07 1.154-.227 1.68-.46-.391.587-.887 1.1-1.456 1.513z"/></svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-white/20 pt-8 text-center">
+            <p className="text-white/70 text-sm">© 2024 Brew Haven. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
